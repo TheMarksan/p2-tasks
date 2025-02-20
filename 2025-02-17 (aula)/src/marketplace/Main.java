@@ -1,6 +1,5 @@
 package marketplace;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Main {
@@ -11,9 +10,9 @@ public class Main {
         ShoppingCart jambo2 = new ShoppingCart(2);
         carrinhos.put(jambo2.getCustomerId(), jambo2);
 
-        TV pimba = new TV("Samsung Pimba", 3666, 70);
-        Refrigerator moiaPouco = new Refrigerator("Moia Pouco", 5700, 150);
-        Stove poucoAssa = new Stove("Pouco Assa", 7500, 6);
+        Product pimba = new TV("Samsung Pimba", 3666, 70);
+        Product moiaPouco = new Refrigerator("Moia Pouco", 5700, 150);
+        Product poucoAssa = new Stove("Pouco Assa", 7500, 6);
 
         jambo.addProduct(pimba);
         jambo.addProduct(moiaPouco);

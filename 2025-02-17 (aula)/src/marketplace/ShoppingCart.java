@@ -27,7 +27,8 @@ public class ShoppingCart {
         }
 
         System.out.println("Itens no carrinho:");
-        list.forEach(p -> System.out.println("Nome: " + p.getName() + " | Preço: R$ " + p.getPrice()));
+        list.forEach(System.out::println); //com toString
+
     }
 
     public int getCustomerId() {
@@ -40,6 +41,12 @@ public class ShoppingCart {
 
     public double getTotalPrice() {
         return list.stream().mapToDouble(Product::getPrice).sum();
+    }
+
+    public void getInchesFromTvs(){
+        for (Product p : list) {
+
+        }
     }
 }
 
